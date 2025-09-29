@@ -7,6 +7,16 @@
   text-align: center;
 }
 
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left; 
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -19,25 +29,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* Animated logo from header */
 .logo {
-  animation: logo-spin infinite 20s linear;
-  height: 0.8em;
-  margin: 0 0.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  height: 80px;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
+

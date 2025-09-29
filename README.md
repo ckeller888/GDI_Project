@@ -54,14 +54,14 @@ cd server
 # Füge conda-forge den als Channel in conda hinzu, da sonst nicht alle Pakete installiert werden können.
 conda config --add channels conda-forge
 # Erstelle ein neues Conda Environment und füge die Python Packges requirements.txt hinzu, requirements.txt befindet sich im Ordner server/app
-conda create --name gdiproject python=3.10.9 --file app/requirements.txt
+conda create --name tourprojects python=3.10.9 --file app/requirements.txt
 ```
 
 2. Backend ausführen, virtuelle Umgebung starten und server *uvicorn* starten. Öffne http://localhost:8000/docs im Browser und verifiziere, ob das Backend läuft.
 ``` shell
 cd server
 # aktiviere die conda umgebung gdiproject
-conda activate gdiproject
+conda activate tourprojects
 # start server auf localhost aus dem Ordner "server"
 uvicorn app.main:app --reload
 # Öffne die angegebene URL im Browser und verifiziere, ob das Backend läuft.

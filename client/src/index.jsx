@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import OpenlayersPage from "./pages/openlayers/OpenlayersPage.jsx";
+// import OpenlayersPage from "./pages/openlayers/OpenlayersPage.jsx";
+import OpenlayersPage from "./pages/openlayers/OpenlayersMap.jsx";
 import { HashRouter, Navigate, Route, Routes } from "react-router";
 import Header from "./Header.jsx";
 import MaplibrePage from "./pages/maplibre/MaplibrePage.jsx";

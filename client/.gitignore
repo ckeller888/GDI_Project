@@ -1,4 +1,5 @@
 # env vars
+.emv
 .env.local
 .env.development.local
 .env.test.local

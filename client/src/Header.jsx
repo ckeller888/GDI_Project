@@ -5,9 +5,9 @@ function NavButton({ path, children }) {
     <NavLink
       to={path}
       style={({ isActive }) => ({
-        display: "inline-block",
-        margin: ".5em 1em",
-        color: isActive ? "dodgerblue" : "black",
+        // display: "inline-block",
+        // margin: ".5em 1em",
+        // color: isActive ? "dodgerblue" : "black",
       })}
     >
       {children}
@@ -18,25 +18,20 @@ function NavButton({ path, children }) {
 function Header() {
   return (
     <>
-      <h1>
-        4230 Webmapping Beispiele mit
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src="./react.svg" className="logo" alt="React logo" />
-        </a>
-        React
+      <h1 className="title">
+          <img src="./grandtour_logo.svg" className="logo" />
+        Grand Tour Foto-Spots
       </h1>
-      <h2>
+      {/* <h2>
         <NavButton path="openlayers">
-          <img src="./OpenLayers_logo.svg" className="logo" alt="OpenLayers logo" />
           OpenLayers
         </NavButton>
         <NavButton path="maplibre">
-          <img src="./Maplibre-logo.png" className="logo" alt="MapLibre logo" />
           MapLibre (Reactive)
         </NavButton>
         <NavButton path="spatialanalysis">Spatial Analysis</NavButton>
         <NavButton path="geotiff">Cloud-optimized GeoTIFF</NavButton>
-      </h2>
+      </h2> */}
     </>
   );
 }
